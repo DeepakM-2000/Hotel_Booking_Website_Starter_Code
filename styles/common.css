@@ -1,106 +1,98 @@
-*{
-    font-family: Ubuntu, sans-serif;
-}
-html, body{
-    position:absolute;
-    top:0;
-    bottom:0;
-    left:0;
-    right:0;
+  /* header css */
+  *{
     margin: 0;
-    padding: 0;
-    height: 100vh;
-}
-#main-body{
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-    /* border: 1px solid red;
-    /* top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0; */
-}
-header img{
-    height: 60px;
-    width: 60px;
-}
-.hotel-img{
-    height: 200px;
-    width: 250px;
+    
 }
 
-footer img{
-    height: 20px;
-    width: 22px;
-}
-body{
-    background-color: #e0e0e0;
-}
-header, footer{
-    background-color: rosybrown;
-    height: 60px;
-    width: 100%;
-    position: fixed;
-}
-#content{
-    width: 100%;
-}
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 3;
-}
-footer{
-    position: absolute;
-    bottom: 0;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    position: fixed;
-    margin-top: 30px;   
-}
-.height{
-    clear: both;
-    height: 70px;
-}
-#login{
-    margin:2%;
-}
-#logo{
-    height: 60px;
-    margin: 1%;
+body {
+    margin: 0;
+    display: block;
+    background-color:  #e0e0e0;
+    font-family:'Ubuntu', sans-serif;
 }
 
-.links{
-    grid-column: 3;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin-right: 2%;
+.container {
+    margin: 0;
+    display: block;
+    padding: 0 !important;
+    min-width: 100%;
 }
-a{
-    position: relative;
+
+a {
     text-decoration: none;
     color: black;
 }
-#copyright{
+
+
+header {
+    top: 0;
+    background-color: rosybrown;
+    position: fixed;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 1;
+}
+
+.login-link {
+    padding: 1%;
+    margin-right: 1%;
+    text-align: center;
+    display: flex;
     justify-content: center;
+    align-items: center;
 }
-#copyright p{
-    font-size: 10px;
-    margin: 0;
-}
-#contact-us{
-    grid-column: 1;
+
+#logo {
     height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+
+.logo {
+    margin-left: 1%;
+}
+.modal-backdrop.show {
+    opacity: 0;
+}
+.modal-backdrop {
+    position:static;
+}
+
+
+/* footer css */
+
+footer {
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    margin-left: 6%;
+    flex-direction: row;
+    position: fixed;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1%;
+    bottom: 0;
+    background-color: rosybrown;
+}
+
+#footer-logo-div img {
+    height: 20px;
+    width: 22px;
+}
+
+#footer-logo-div {
+    order: 3;
+    margin-right: 2%;
+}
+
+#contact-us-div {
+    order: 1;
+    margin-left: 2%;
+}
+
+#footer-div {
+    font-size: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    order: 2;
 }
